@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.App{
+  padding: 2%;
+  border: solid #00949a 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Css for navbar */
+.navPage{
+  padding: 1%;
+  margin-left: 3%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 30%;
 }
-
-.App-link {
-  color: #61dafb;
+ul{
+ display: flex;
+ list-style: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navlink{
+  /* float: inline-end; */
+  width: 80%;
+}
+li{
+  padding: 3%;
+}
+li:hover{
+  background-color: #00949a;
+  border-radius: 18px;
+}
+a{
+  text-decoration: none;
+}
+.Page{
+  display: flex;
+  margin-left: 4%;
+  
+}
+.Containt{
+  padding: 2%;
+  width: 40%;
+}
+p{
+  line-height: 135%;
+  
+}
+.image{
+  width: 60%;
+  margin-right: 20%;
+}
+.img2{
+  width: 130%;
+}
+@media screen and (max-width: 550px) {
+  div.Page {
+  display: block;
+}
+}
+@media screen and (max-width: 750px) {
+  div.navbar {
+  display: block;
+}
+}
+@media screen and (max-width: 350px) {
+  ul {
+  display: block;
+}
 }
